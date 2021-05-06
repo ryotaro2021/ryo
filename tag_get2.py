@@ -1,8 +1,8 @@
 from selenium import webdriver
 import time
-#import pandas as pd
+from webdriver_manager.chrome import ChromeDriverManager
 
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(ChromeDriverManager().install())
 browser.implicitly_wait(3)
 
 
